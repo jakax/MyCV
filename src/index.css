@@ -9,5 +9,44 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+      monospace;
 }
+
+.title-header {
+    margin-left: 33%;
+    text-align: left;
+}
+
+.title-name, .title-job {
+    margin: 0;
+}
+
+.title-name {
+    font-size: 50px;
+}
+
+.info-header {
+    text-align: center;
+}
+
+.nav-header {
+    margin-left: 30%;
+    margin-top: 25px;
+    width: 50%;
+}
+
+.body-info {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+
+.body-info hr {
+    border-color: #808080;
+}
+
+.jobs {
+    margin: auto;
+    width: 100%;
+}
+
