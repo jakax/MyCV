@@ -5,21 +5,6 @@ import './technologies.css';
 
 class Technologies extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-          companyName: ''
-        };
-        this.activeCompany = this.activeCompany.bind(this);
-      }
-
-    activeCompany = e => {
-        console.log(e.target.value);
-        this.setState({
-            companyName: e.target.value
-        });
-    }
-
     render() {
 
         return (
