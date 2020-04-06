@@ -9,15 +9,24 @@ class Jobs extends React.Component {
     constructor() {
         super();
         this.state = {
-          companyName: ''
+          companyName: '',
+          companyValue: false
         };
         this.activeCompany = this.activeCompany.bind(this);
       }
 
     activeCompany = e => {
-        this.setState({
-            companyName: e.target.value
-        });
+        if (this.state.companyName === e.target.value && this.state.companyValue) {
+            this.setState({
+                companyName: e.target.value,
+                companyValue: false
+            });
+        } else {
+            this.setState({
+                companyName: e.target.value,
+                companyValue: true
+            });
+        }
     }
 
     render() {
@@ -135,7 +144,7 @@ class Jobs extends React.Component {
                     <Button value="super7" onClick={this.activeCompany}>Super7UI</Button>
                 </div>
 
-                <div>{companyDiv}</div>
+                <div>{this.state.companyValue? companyDiv : null}</div>
             </div>
         )
     }

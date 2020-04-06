@@ -12,7 +12,6 @@ export default class Home extends React.Component {
 	}
 	
 	getNavLinkClass(path) {
-		console.log('location: ', this);
 		return this.props.path === path ? 'active' : '';
 	}
 
